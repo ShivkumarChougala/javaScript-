@@ -24,4 +24,28 @@ myData.email = "day@23gmail.com"
 myData.greeting = function(){
     console.log(`hello , ${this.name}`);
 }
-console.log(myData.greeting()); // hello , Daddy
+// console.log(myData.greeting()); // hello , Daddy
+
+const ob1 = { 1: "a", 2: "b"}
+const ob2 = {2: "c", 3: "d"} 
+
+const ob3 = Object.assign({},ob1,ob2)
+// console.log(typeof ob3); // { '1': 'a', '2': 'c', '3': 'd' }
+// console.log(Object.keys(ob1)); // [ '1', '2' ]
+// console.log(Object.values(ob1)); // [ 'a', 'b' ]
+
+
+///// object-de-structure
+
+const user = {
+    name: "daddy",
+    age : 21,
+    email : "daddy@google.com"
+}
+
+const {name: hesaru} = user
+// console.log(name); // daddy
+
+console.log(hesaru); // we got same output this menthod is called de-structor  {name: hesaru} check this 
+
+
